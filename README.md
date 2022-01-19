@@ -1,8 +1,10 @@
 # Mã Hoá Ứng Dụng
+![GitHub last commit](https://img.shields.io/github/last-commit/Khang-Sully/DES-algorithm)
+
 An example for college. This is a very simple implementation of DES algorithm using [C++](https://www.cplusplus.com/). Include 3 part of a DES.
-* [Generate Keys](#1.-generate-keys)
-* [Encryption](#2.-encryption)
-* [Decryption](#3.-decryption)
+* [Generate Keys](#1-generate-keys)
+* [Encryption](#2-encryption)
+* [Decryption](#3-decryption)
 ## 1. Generate keys
 Generate 16 keys using 2 pc table to create different keys. Key in main function using to make an example for user to understand clearly.
 ### Usage
@@ -24,5 +26,14 @@ g++ -o [main.exe path] [main.cpp path] (optional)[function.cpp path]
 - If you are using [Visual Studio](https://visualstudio.microsoft.com/) 2015, 2017, 2019 or 2022. You will don't need those steps
 - You just need to download all the cpp and h files.
 ## 3. Decryption
+This is a full implementation of the DES algorithm. Include 2 above parts and addition to that is the decryption part. To decrypt the ciphertext, reverse the order of the keys in round_keys (i.e., key 16 becomes key 1, and so on) and apply the DES() function again.
+### Usage
+- Encryption part has 2 files, include: main file is also the function file and a header file.
+- To run the example using Command Prompt. Make sure that user have already install [MinGW C++](https://www.ics.uci.edu/~pattis/common/handouts/mingweclipse/mingw.html):
+```
+g++ -o [main.exe path] [main.cpp path] (optional)[function.cpp path]
+```
+- If you are using [Visual Studio](https://visualstudio.microsoft.com/) 2015, 2017, 2019 or 2022. You will don't need those steps
+- You just need to download all the cpp and h files.
 ## Credit
 [Educative.io - How to implement the DES algorithm in C++](https://www.educative.io/edpresso/how-to-implement-the-des-algorithm-in-cpp)
